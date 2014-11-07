@@ -1,0 +1,61 @@
+.container {
+    width: 350px;
+}
+
+.contenteditable {
+    width: 350px;
+    height: 70px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.autocomplete {
+    width: 350px;
+    border: 1px solid #ccc;
+    border-top: transparent;
+    border-bottom: transparent;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.autocomplete > .item {
+    border-bottom: 1px solid #ccc;
+    padding: 2px 5px 2px 5px;
+}
+
+.autocomplete > .item > img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    padding-top: 3px;
+    float: left;
+}
+
+.autocomplete > .item > p {
+    margin: 0;
+    padding: 5px;
+}
+
+.autocomplete > .item:hover {
+    background-color: #f1f1f1;
+}
+
+.autocomplete > .item:focus {
+    background-color: #f1f1f1;
+    outline: none;
+}
+
+.generatedMention {
+    padding: 1px 3px;
+    color: #FFF;
+    background-color: #006699;
+}
+
+.generatedHashtag {
+    padding: 1px 3px;
+    color: #3b5998;
+}

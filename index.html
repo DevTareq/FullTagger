@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="./jquery.min.js" type="text/javascript"></script>
+        <script src="./fullTagger.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="./fullTagger.css">
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+//                $('.contenteditable').fullTagger({hashtag: true, mention: false});
+//                $('.contenteditable').fullTagger({hashtag: true});
+                $('.contenteditable').fullTagger();
+
+            })
+        </script>
+    </head>
+    <body>
+        <div class="container">   
+            <div class="contenteditable" contenteditable="true"></div>
+            <div class="autocomplete"></div>
+        </div>
+
+    </body>
+</html>
