@@ -12,7 +12,8 @@
             triggerChar: '@',
             hashtag: false,
             mention: true,
-            sample: true
+            sample: true,
+            url: ''
         }, options);
 
         return this.each(function() {
@@ -33,10 +34,11 @@
                             // get everything before the first space
                             afterChar = afterChar.split(' ')[0];
                             afterChar = afterChar.replace('&nbsp;', '').replace('<br>', '');
-                            if (!settings.sample) { // real ajax request 
-//                                $.getJSON(ajaxURL, {q: afterChar, s: triggerChar}, function(results) {
-//                                    generateAutocomplete(results);
-//                                });
+                            if (!settings.sample) { 
+                                // YOUR AJAX REQUEST 
+                                $.getJSON(settings.url, {q: afterChar}, function(results) {
+                                    generateAutocomplete($(this), results);
+                                });
                             } else {
                                 var sample = [{name: 'tareq'}, {name: 'ahmad'}, {name: 'ali'}];
                                 generateAutocomplete($(this), sample);
@@ -232,6 +234,6 @@
             placeCaretAtEnd($inputContainer[0]);
 
         }
-        
+
     };
 })(jQuery);
