@@ -56,7 +56,7 @@ or
 * This is a front-end project, and i didn't write anything related to security (Injection, XSS) yet. 
   you should keep that in mind.
 
-* This Plug-in is quite new so it is tested under the modern Browsers.
+* This Plug-in is quite new, tested under the modern Browsers.
 
 
 
