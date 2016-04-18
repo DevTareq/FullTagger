@@ -12,10 +12,6 @@ Introduction
 
 fullTagger will let you experience the "hashtags and mentions" like many social media websites using "contenteditable" Attribute for a regular DIV tag.
 
-License 
-==========
-MIT License - http://www.opensource.org/licenses/mit-license.php
-
 
 Please report any bugs/issues, and feel free to make this Plug-in even more functional.
 ==========
